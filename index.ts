@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({
   extended: true
 }));
-
+ 
 app.use(cors());
 if(!process.env.DB_HOST){
   throw "Please specify the DB host in .env file";
